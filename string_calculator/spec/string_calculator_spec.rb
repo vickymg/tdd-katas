@@ -16,4 +16,8 @@ describe StringCalculator do
     expect(calculator.add("1", "2")).to eq(3)
   end
 
+  it 'should return the sum of any amount of string numbers' do
+    expect(calculator.add("1", "2", "3", "4")).to eq(10)
+  end
+
 end
