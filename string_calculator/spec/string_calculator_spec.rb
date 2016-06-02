@@ -11,13 +11,15 @@ describe 'string_calculator' do
     it 'should return the value of a single string number' do
       expect(add("1")).to eq(1)
     end
+
+    it 'should return the sum of two numbers, comma delimited' do
+      expect(add("1, 2")).to eq(3)
+    end
   end
 
 end
 
 
-
-# A single number returns the value
 # Two numbers, comma delimited, returns the sum
 # Two numbers, newline delimited, returns the sum
 # Three numbers, delimited either way, returns the sum
