@@ -15,12 +15,19 @@ describe 'string_calculator' do
     it 'should return the sum of two numbers, comma delimited' do
       expect(add("1, 2")).to eq(3)
     end
+
+    it 'should return the sum of two numbers, newline delimited' do
+      expect(add("1\n2")).to eq(3)
+    end
+
+    it 'should return the sum of three numbers, delimited either way' do
+      expect(add("1\n 2, 3")).to eq(6)
+    end
   end
 
 end
 
 
-# Two numbers, comma delimited, returns the sum
 # Two numbers, newline delimited, returns the sum
 # Three numbers, delimited either way, returns the sum
 # Negative numbers throw an exception
