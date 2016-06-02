@@ -7,14 +7,16 @@ describe 'string_calculator' do
     it 'should return zero when passed an empty string' do
       expect(add("")).to eq(0)
     end
+
+    it 'should return the value of a single string number' do
+      expect(add("1")).to eq(1)
+    end
   end
 
 end
 
 
 
-#
-# An empty string returns zero
 # A single number returns the value
 # Two numbers, comma delimited, returns the sum
 # Two numbers, newline delimited, returns the sum
