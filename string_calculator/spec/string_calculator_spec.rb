@@ -1,23 +1,25 @@
 require 'string_calculator'
 
-describe StringCalculator do
+describe 'string_calculator' do
 
-  let(:calculator) {described_class.new}
+  describe '#add' do
 
-  it 'should return 0 when passed an empty string' do
-    expect(calculator.add("")).to eq(0)
-  end
-
-  it 'should return integer when passed one string number' do
-    expect(calculator.add("1")).to eq(1)
-  end
-
-  it 'should return an integer sum of two string numbers' do
-    expect(calculator.add("1", "2")).to eq(3)
-  end
-
-  it 'should return the sum of any amount of string numbers' do
-    expect(calculator.add("1", "2", "3", "4")).to eq(10)
+    it 'should return zero when passed an empty string' do
+      expect(add("")).to eq(0)
+    end
   end
 
 end
+
+
+
+#
+# An empty string returns zero
+# A single number returns the value
+# Two numbers, comma delimited, returns the sum
+# Two numbers, newline delimited, returns the sum
+# Three numbers, delimited either way, returns the sum
+# Negative numbers throw an exception
+# Numbers greater than 1000 are ignored
+# A single char delimiter can be defined on the first line (e.g. //# for a ‘#’ as the delimiter)
+# A multi char delimiter can be defined on the first line (e.g. //[###] for ‘###’ as the delimiter)
