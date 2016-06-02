@@ -23,13 +23,15 @@ describe 'string_calculator' do
     it 'should return the sum of three numbers, delimited either way' do
       expect(add("1\n 2, 3")).to eq(6)
     end
+
+    it 'should throw an exception for negative numbers' do
+      expect{add("-1, 2")}.to raise_error("Sorry, no negative numbers!")
+    end
   end
 
 end
 
 
-# Two numbers, newline delimited, returns the sum
-# Three numbers, delimited either way, returns the sum
 # Negative numbers throw an exception
 # Numbers greater than 1000 are ignored
 # A single char delimiter can be defined on the first line (e.g. //# for a ‘#’ as the delimiter)
