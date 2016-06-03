@@ -27,12 +27,15 @@ describe 'string_calculator' do
     it 'should throw an exception for negative numbers' do
       expect{add("-1, 2")}.to raise_error("Sorry, no negative numbers!")
     end
+
+    it 'should ignore numbers greater than 1000' do
+      expect(add("1001, 2")).to eq(2)
+    end
   end
 
 end
 
 
-# Negative numbers throw an exception
 # Numbers greater than 1000 are ignored
 # A single char delimiter can be defined on the first line (e.g. //# for a ‘#’ as the delimiter)
 # A multi char delimiter can be defined on the first line (e.g. //[###] for ‘###’ as the delimiter)
