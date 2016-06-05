@@ -1,3 +1,4 @@
 def numerals_converter(num)
-  "Romans didn't have zero!"
+  return "Romans didn't have zero!" if num == 0
+  "I"
 end
