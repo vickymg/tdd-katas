@@ -10,4 +10,8 @@ describe "#numerals_coverter" do
     expect(numerals_converter(1)).to eq("I")
   end
 
+  it "should return V when passed 5" do
+    expect(numerals_converter(5)).to eq("V")
+  end
+
 end
