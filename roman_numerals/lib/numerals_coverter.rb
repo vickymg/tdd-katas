@@ -4,5 +4,12 @@ def numerals_converter(num)
                1 => "I"
              }
   return "Romans didn't have zero!" if num == 0
-  numerals[num]
+  result = ""
+  numerals.each do |arabic, roman|
+    (num / arabic).times do
+      result << roman
+      num -= arabic
+    end
+  end
+  result
 end
