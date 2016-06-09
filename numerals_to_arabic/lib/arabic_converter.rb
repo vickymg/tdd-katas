@@ -1,3 +1,4 @@
 def arabic_converter(numeral)
-  0
+  return 0 if numeral == ""
+  1
 end
