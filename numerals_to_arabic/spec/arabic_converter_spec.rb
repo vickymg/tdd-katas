@@ -7,6 +7,11 @@ describe 'arabic_converter' do
   end
 
   it 'should return 1 when passed I' do
-    expect(arabic_converter("1")).to eq(1)
+    expect(arabic_converter("I")).to eq(1)
   end
+
+  it 'should return 5 when passed V' do
+    expect(arabic_converter("V")).to eq(5)
+  end
+
 end
