@@ -34,8 +34,3 @@ describe 'string_calculator' do
   end
 
 end
-
-
-# Numbers greater than 1000 are ignored
-# A single char delimiter can be defined on the first line (e.g. //# for a ‘#’ as the delimiter)
-# A multi char delimiter can be defined on the first line (e.g. //[###] for ‘###’ as the delimiter)
