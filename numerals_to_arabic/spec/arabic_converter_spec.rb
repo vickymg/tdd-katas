@@ -30,4 +30,8 @@ describe 'arabic_converter' do
     expect(arabic_converter("X")).to eq(10)
   end
 
+  it 'should return 49 when passed IL' do
+    expect(arabic_converter("IL")).to eq(49)
+  end
+
 end

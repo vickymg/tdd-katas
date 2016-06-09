@@ -11,7 +11,7 @@ def arabic_converter(numeral)
     "M" => 1000
     }
   return 0 if numeral == ""
-  return number = nums[numeral] if numeral.length == 1
+  number = nums[numeral] if numeral.length == 1
   numeral.split("").each_cons(2) do |x, y|
     nums[x] < nums[y] ? number = nums[y]-nums[x] : number = nums[x] + nums[y]
   end
