@@ -14,6 +14,10 @@ describe 'arabic_converter' do
     expect(arabic_converter("V")).to eq(5)
   end
 
+  it 'should return 6 when passed VI' do
+    expect(arabic_converter("VI")).to eq(6)
+  end
+
   it 'should return 10 when passed X' do
     expect(arabic_converter("X")).to eq(10)
   end

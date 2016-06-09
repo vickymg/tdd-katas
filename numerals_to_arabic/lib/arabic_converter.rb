@@ -5,5 +5,9 @@ def arabic_converter(numeral)
     "X" => 10
     }
   return 0 if numeral == ""
-  nums[numeral]
+  number = 0
+  numeral.split(//).each do |x|
+    number += nums[x]
+  end
+  number
 end
