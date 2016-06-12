@@ -16,5 +16,9 @@ describe('FizzBuzz', function() {
 
   it('returns buzz when passed 5', function() {
     expect(fizzBuzz.calculator(5)).toEqual('Buzz');
-  })
+  });
+
+  it('returns fizzbuzz when passed 15', function() {
+    expect(fizzBuzz.calculator(15)).toEqual('FizzBuzz');
+  });
 })
