@@ -18,7 +18,15 @@ describe('FizzBuzz', function() {
     expect(fizzBuzz.calculator(5)).toEqual('Buzz');
   });
 
+  it('returns buzz when passed 10', function() {
+    expect(fizzBuzz.calculator(10)).toEqual('Buzz');
+  });
+
   it('returns fizzbuzz when passed 15', function() {
     expect(fizzBuzz.calculator(15)).toEqual('FizzBuzz');
+  });
+
+  it ('returns the number if not divisible by 3 and/or 5', function() {
+    expect(fizzBuzz.calculator(4)).toEqual(4);
   });
 })
