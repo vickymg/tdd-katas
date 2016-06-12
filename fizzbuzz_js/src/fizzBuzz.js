@@ -3,5 +3,9 @@ function FizzBuzz() {
 }
 
 FizzBuzz.prototype.calculator = function(num) {
-  return "Fizz";
+  if(num == 3) {
+    return "Fizz";
+  } else {
+    return "Buzz";
+  }
 }
