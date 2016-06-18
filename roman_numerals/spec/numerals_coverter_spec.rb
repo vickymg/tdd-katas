@@ -10,6 +10,10 @@ describe "#numerals_coverter" do
     expect(numerals_converter(1)).to eq("I")
   end
 
+  it "should return II when passed 2" do
+    expect(numerals_converter(2)).to eq("II")
+  end
+
   it "should return IV when passed 4" do
     expect(numerals_converter(4)).to eq("IV")
   end
