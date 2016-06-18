@@ -6,4 +6,8 @@ describe "#numerals_coverter" do
     expect(numerals_converter(0)).to eq("Not a valid number for conversion!")
   end
 
+  it "should return I when passed one" do
+    expect(numerals_converter(1)).to eq("I")
+  end
+
 end
