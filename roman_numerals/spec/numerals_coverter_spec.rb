@@ -29,4 +29,13 @@ describe "#numerals_coverter" do
   it "should return X when passed 10" do
     expect(numerals_converter(10)).to eq("X")
   end
+
+  it "should return XXXV when passed 35" do
+    expect(numerals_converter(35)).to eq("XXXV")
+  end
+
+  it "should return CMXCVI when passed 996" do
+    expect(numerals_converter(996)).to eq("CMXCVI")
+  end
+
 end
