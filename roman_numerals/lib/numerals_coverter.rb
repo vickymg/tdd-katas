@@ -3,6 +3,7 @@ def numerals_converter(num)
     1 => "I",
     4 => "IV",
     5 => "V",
+    9 => "IX",
     10 => "X"
   }
   return "Not a valid number for conversion!" if num <= 0
